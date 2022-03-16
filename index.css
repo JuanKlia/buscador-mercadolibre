@@ -29,13 +29,19 @@ body {
 }
 .formulario-boton {
   height: 44px;
-  min-width: 121px;
-  padding: 13px 35px;
+
+  padding: 8px 15px;
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 10px;
   font-weight: 700;
 }
-
+@media (min-width: 450px) {
+  .formulario-boton {
+    min-width: 121px;
+    font-size: 16px;
+    padding: 13px 35px;
+  }
+}
 .contenedor {
   max-width: 510px;
   margin: 17px auto;
