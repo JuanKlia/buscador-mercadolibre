@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script async src="./index.js"></script>
+    <title>BUSCADOR MERCADOLIBRE</title>
+  </head>
+  <body>
+    <header class="header">
+      <form class="formulario">
+        <input
+          name="busqueda"
+          type="text"
+          class="formulario-input"
+          placeholder="Producto..."
+        />
+        <button class="formulario-boton">Buscar</button>
+      </form>
+    </header>
+
+    <div class="contenedor">
+      <h4 class="contador-resultados"></h4>
+      <div class="resultados"></div>
+    </div>
+    <template id="result-item-template"
+      ><div class="producto">
+        <img
+          src="https://d3ugyf2ht6aenh.cloudfront.net/stores/892/141/products/termo-11-40424372854957be2315911216849189-1024-1024.jpg"
+          alt=""
+          class="producto-imagen"
+        />
+        <div class="producto-informacion">
+          <h5 class="producto-informacion-titulo">Nombre del producto</h5>
+          <p class="producto-informacion-estado">Estado</p>
+          <p class="producto-informacion-vendidos">
+            Vendidos: <span>numero</span>
+          </p>
+        </div>
+
+        <p class="producto-precio">$1111</p>
+      </div></template
+    >
+  </body>
+</html>

@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #fff159;
+  padding: 24px 10px;
+  width: 100%;
+}
+
+.contador-resultados {
+  margin: 0 5px;
+}
+.formulario {
+  max-width: 510px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+.formulario-input {
+  flex-grow: 2;
+  font-family: "Roboto";
+  font-size: 18px;
+}
+.formulario-boton {
+  height: 44px;
+  min-width: 121px;
+  padding: 13px 35px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.contenedor {
+  max-width: 510px;
+  margin: 17px auto;
+
+  display: grid;
+  gap: 17px;
+
+  font-family: "Roboto";
+  font-size: 16px;
+}
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+.resultados {
+  display: grid;
+  gap: 17px;
+}
+.producto {
+  display: grid;
+  border: solid;
+  padding: 5px;
+  grid-template-columns: 128px 1fr 1fr;
+  gap: 10px;
+  border-radius: 4px;
+  margin: 0 5px;
+}
+.producto-imagen {
+  width: 100px;
+}
+@media (min-width: 450px) {
+  .producto-imagen {
+    width: 128px;
+  }
+}
+.producto-informacion {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 4px;
+  margin: 16px 0;
+}
+.producto-informacion-titulo {
+  font-size: 11px;
+}
+.producto-informacion-estado {
+  font-size: 11px;
+}
+.producto-informacion-vendidos {
+  font-size: 11px;
+  align-self: flex-end;
+}
+
+@media (min-width: 450px) {
+  .producto-informacion-titulo {
+    font-size: 16px;
+  }
+}
+@media (min-width: 450px) {
+  .producto-informacion-estado {
+    font-size: 14px;
+  }
+}
+@media (min-width: 450px) {
+  .producto-informacion-vendidos {
+    font-size: 14px;
+  }
+}
+.producto-precio {
+  font-size: 15px;
+  font-weight: 700;
+  color: #5791a4;
+  justify-self: flex-end;
+  padding: 5px 15px;
+}
+
+@media (min-width: 450px) {
+  .producto-precio {
+    font-size: 29px;
+  }
+}
